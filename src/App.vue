@@ -1,20 +1,27 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
+  	<home v-if="logged_in"/>
+  	<login-page v-else/>
   </div>
 </template>
 
 <script>
+import Login from "./pages/Login";
+import Home from "./pages/Home";
+
 export default {
+	components:{
+		Home,
+		"login-page": Login
+	},
+	data(){
+		return{
+			logged_in: false,
+		}
+	}
 };
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #000000;
-  margin-top: 60px;
-}
+<style src="./css/styles.css">
+
 </style>
