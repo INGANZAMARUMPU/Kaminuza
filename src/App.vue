@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-  	<home v-if="logged_in"/>
-  	<login-page v-else/>
+  	<home v-if="logged_in" @logout="logged_in=false"/>
+  	<login-page @login="logged_in=true" v-else/>
   </div>
 </template>
 

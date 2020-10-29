@@ -1,6 +1,6 @@
 <template>
   <div>
-  	<form class="login-form">
+  	<form class="login-form" @submit.prevent="login">
     	<h1>WELCOME BACK</h1>
 		<label for="id_username">Username:</label>
 		<input type="text" placeholder="Username " class="input" required id="id_username">
@@ -15,6 +15,12 @@
 
 <script>
 export default {
+	methods:{
+		login(){
+			// axios codes
+			this.$emit("login", {});
+		}
+	}
 };
 </script>
 
