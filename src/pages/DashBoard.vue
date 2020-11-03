@@ -3,7 +3,6 @@
         <div class="liste">
             <menu-card v-for="menu in menus" :menu="menu"/>
         </div>
-        <hr>
     </div>
 </template>
 
@@ -13,12 +12,12 @@ export default {
     data:function(){
         return {
             menus :[
-                {name:"Étudiants", infos:"gerer Étudiants", details:""},
-                {name:"Classes", infos:"gerer Classes", details:""},
-                {name:"Cours", infos:"gerer Cours", details:""},
-                {name:"Examens", infos:"gerer Examens", details:""},
-                {name:"Notes", infos:"gerer Notes", details:""},
-                {name:"Professeurs", infos:"gerer Professeurs", details:""}
+                {name:"Étudiants", url:"/etudiants", infos:"gerer Étudiants", details:""},
+                {name:"Classes", url:"/classes", infos:"gerer Classes", details:""},
+                {name:"Cours", url:"/cours", infos:"gerer Cours", details:""},
+                {name:"Examens", url:"/examens", infos:"gerer Examens", details:""},
+                {name:"Notes", url:"/notes", infos:"gerer Notes", details:""},
+                {name:"Professeurs", url:"/professeurs", infos:"gerer Professeurs", details:""}
             ]
         }
     },
@@ -29,7 +28,7 @@ export default {
 </script>
 <style scoped>
 .container{
-    width: 80%;
+    width: 500px;
     margin: auto;
 }
 .liste{

@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
   		<Topbar v-on="$listeners"/>
-  		<router-view/>
+  		<router-view default="/"/>
   	</div>
 </template>
 
