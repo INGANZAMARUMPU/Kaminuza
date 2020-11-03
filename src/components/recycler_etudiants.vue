@@ -4,7 +4,7 @@
         <input type="text" placeholder="recherche..." style="float:right; height:2em">
     </div>
     <div class="recycler">
-        <UserCard v-for="client in clients" :client="client" :evenmt="evenmt" v-on="$listeners"/>
+        <UserCard v-for="person in persons" :person="person" :evenmt="evenmt" v-on="$listeners"/>
     </div>
 </div>
 </template>
@@ -16,14 +16,10 @@ export default {
         UserCard
     },
     props:{
-        clients:{
+        persons:{
             type : Array,
             default : [],
         },
-        evenmt:{
-            type: Object,
-            default: {}
-        }
     }
 };
 </script>
