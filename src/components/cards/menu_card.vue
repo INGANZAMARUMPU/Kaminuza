@@ -1,16 +1,16 @@
 <template>
     <router-link :to="menu.url">
-        <div class="user-card" qr-data="client.qr">
-            <div class="img-user">
-                <img src='client.avatar' alt="photo de profile" width="30px">
+        <div class="menu-card">
+            <div class="img-menu">
+                <img :src='menu.icon' alt="photo de profile" width="30px">
             </div>
-            <div class="user-info firstname">
+            <div class="menu-info firstname">
                 {{ menu.name }}
             </div>
-            <div class="user-info lastname">
+            <div class="menu-info lastname">
                 {{ menu.infos }}
             </div>
-            <div class="user-info tickettype">
+            <div class="menu-info tickettype">
                 {{ menu.details }}
             </div>
         </div>
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped>
-.user-card{
+.menu-card{
     display: inline-flex;
     align-items: center;
     text-align: center;
@@ -45,21 +45,21 @@ export default {
     overflow: hidden;
     color: #000;
 }
-.username{
+.menuname{
     max-width: 130px;
     overflow: hidden;
 }
-.user-card:hover{
+.menu-card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.img-user{
+.img-menu{
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: #ddd;
     overflow: hidden;
 }
-.img-user img{
+.img-menu img{
     width: 100%;
     margin:auto;
 }

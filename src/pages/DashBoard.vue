@@ -12,12 +12,12 @@ export default {
     data:function(){
         return {
             menus :[
-                {name:"Étudiants", url:"/etudiants", infos:"gerer Étudiants", details:""},
-                {name:"Classes", url:"/classes", infos:"gerer Classes", details:""},
-                {name:"Cours", url:"/cours", infos:"gerer Cours", details:""},
-                {name:"Examens", url:"/examens", infos:"gerer Examens", details:""},
-                {name:"Notes", url:"/notes", infos:"gerer Notes", details:""},
-                {name:"Professeurs", url:"/professeurs", infos:"gerer Professeurs", details:""}
+                {name:"Étudiants", url:"/etudiants", infos:"gerer Étudiants", icon:"/assets/logo.png"},
+                {name:"Classes", url:"/classes", infos:"gerer Classes", icon:"/assets/logo.png"},
+                {name:"Cours", url:"/cours", infos:"gerer Cours", icon:"/assets/logo.png"},
+                {name:"Examens", url:"/examens", infos:"gerer Examens", icon:"/assets/logo.png"},
+                {name:"Notes", url:"/notes", infos:"gerer Notes", icon:"/assets/logo.png"},
+                {name:"Professeurs", url:"/professeurs", infos:"gerer Professeurs", icon:"/assets/logo.png"}
             ]
         }
     },
@@ -28,7 +28,7 @@ export default {
 </script>
 <style scoped>
 .container{
-    width: 500px;
+    max-width: 500px;
     margin: auto;
 }
 .liste{
