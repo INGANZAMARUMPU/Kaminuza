@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-  	<home v-if="logged_in" @logout="logged_in=false"/>
-  	<login-page @login="logged_in=true" v-else/>
+  	<home v-if="$store.state.logged_in" @logout="$store.state.logged_in=false"/>
+  	<login-page v-else/>
   </div>
 </template>
 
@@ -13,11 +13,6 @@ export default {
 	components:{
 		Home,
 		"login-page": Login
-	},
-	data(){
-		return{
-			logged_in: false,
-		}
 	}
 };
 </script>

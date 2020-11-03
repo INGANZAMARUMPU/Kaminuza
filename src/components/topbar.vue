@@ -1,7 +1,7 @@
 <template>
     <div class="navbar">
         <ul>
-            <li><a href="/">Acceuil</a></li>
+            <li><router-link to="/">Acceuil</router-link></li>
             <li><a @click.prevent="logout">logout</a></li>
         </ul>
     </div>

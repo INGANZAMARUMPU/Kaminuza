@@ -18,7 +18,9 @@ export default {
 	methods:{
 		login(){
 			// axios codes
-			this.$emit("login", {});
+			// this.$emit("login", {});
+			console.log(this.$store.state.logged_in);
+			this.$store.state.logged_in = true;
 		}
 	}
 };
