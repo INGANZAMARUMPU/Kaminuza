@@ -2,16 +2,13 @@
     <router-link :to="menu.url">
         <div class="menu-card">
             <div class="img-menu">
-                <img :src='menu.icon' alt="photo de profile" width="30px">
+                <img :src='menu.icon' :alt="menu.infos" width="30px">
             </div>
-            <div class="menu-info firstname">
+            <div class="menu-info title">
                 {{ menu.name }}
             </div>
-            <div class="menu-info lastname">
+            <div class="menu-info">
                 {{ menu.infos }}
-            </div>
-            <div class="menu-info tickettype">
-                {{ menu.details }}
             </div>
         </div>
     </router-link>
@@ -53,8 +50,8 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .img-menu{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: #ddd;
     overflow: hidden;
@@ -62,5 +59,8 @@ export default {
 .img-menu img{
     width: 100%;
     margin:auto;
+}
+.title{
+    font-weight: bold;
 }
 </style>
