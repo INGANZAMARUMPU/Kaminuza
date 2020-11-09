@@ -17,7 +17,11 @@ export default {
                 {name:"Cours", url:"/cours", infos:"gerer Cours", icon:"/assets/logo.png"},
                 {name:"Examens", url:"/examens", infos:"gerer Examens", icon:"/assets/logo.png"},
                 {name:"Notes", url:"/notes", infos:"gerer Notes", icon:"/assets/logo.png"},
-                {name:"Professeurs", url:"/professeurs", infos:"gerer Professeurs", icon:"/assets/logo.png"}
+                {name:"Professeurs", url:"/professeurs", infos:"gerer Professeurs", icon:"/assets/logo.png"},
+                {name:"Facultes", url:"/facultes", infos:"gerer facultes", icon:"/assets/logo.png"},
+                {name:"Departements", url:"/departements", infos:"gerer departements", icon:"/assets/logo.png"},
+                {name:"Campus", url:"/campus", infos:"gerer campus", icon:"/assets/logo.png"},
+                {name:"Niveaux", url:"/niveaux", infos:"gerer les niveaux", icon:"/assets/logo.png"},
             ]
         }
     },
@@ -28,7 +32,7 @@ export default {
 </script>
 <style scoped>
 .container{
-    max-width: 500px;
+    max-width: 700px;
     margin: auto;
 }
 .liste{

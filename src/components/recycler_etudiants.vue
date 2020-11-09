@@ -4,16 +4,18 @@
         <input type="text" placeholder="recherche..." style="float:right; height:2em">
     </div>
     <div class="recycler">
-        <UserCard v-for="person in persons" :person="person" :evenmt="evenmt" v-on="$listeners"/>
+        <AddCard v-on="$listeners"/>
+        <UserCard v-for="person in persons" :person="person" v-on="$listeners"/>
     </div>
 </div>
 </template>
 
 <script>
 import UserCard from './cards/user_card'
+import AddCard from './cards/add_card'
 export default {
     components: {
-        UserCard
+        UserCard, AddCard
     },
     props:{
         persons:{
